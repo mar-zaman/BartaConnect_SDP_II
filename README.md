@@ -1,4 +1,4 @@
-# 💬 BartaConnect (বাতরাকনেক্ট)
+# 💬 BartaConnect 
 
 A scalable real-time persistent full-stack chat application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.IO.  
 BartaConnect supports one-to-one messaging, group chats, real-time communication, and persistent message storage.
