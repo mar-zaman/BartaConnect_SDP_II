@@ -98,8 +98,8 @@ function Homepage() {
           BartaConnect | বার্তাকানেক্ট</Text>
         
         {/* নতুন সাব-টাইটেল */}
-        <Text fontSize="md" fontWeight="500" color="purple.500" mt="-5px">
-          Welcome to BartaConnect 2.0
+       <Text fontSize="md" fontWeight="500" color="purple.500" mt="-5px">
+          Welcome to BartaConnect 2.0 by- Md. Akhtaruzzaman (CSE-01)
         </Text>
       </Box>
 
