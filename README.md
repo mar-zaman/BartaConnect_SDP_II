@@ -1,81 +1,147 @@
+# 💬 BartaConnect (বাতরাকনেক্ট)
 
-# BartaConnect
+A scalable real-time persistent full-stack chat application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.IO.  
+BartaConnect supports one-to-one messaging, group chats, real-time communication, and persistent message storage.
 
-BartaConnect is a Full Stack Chatting App.
-Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
-## Tech Stack
+---
 
-**Client:** React JS
+## 🚀 Live Demo
+https://your-deployment-link.com
 
-**Server:** Node JS, Express JS
+---
 
-**Database:** Mongo DB
-  
-## Demo
+## 📌 Features
 
-[https://BartaConnect.herokuapp.com/](https://talk-a-tive-7fgq.onrender.com)
+### 🔐 Authentication
+- Secure user registration and login
+- Password hashing using bcrypt
+- JWT-based authentication system
+- Profile picture upload using Cloudinary
 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/group%20%2B%20notif.PNG)
-## Run Locally
+### 💬 Real-Time Chat
+- One-to-one private messaging
+- Group chat creation and management
+- Real-time messaging using Socket.IO
+- Typing indicators
+- Instant message notifications
 
-Clone the project
+### 👥 Group Features
+- Create and rename groups
+- Add or remove participants
+- Admin-only group control
 
+### 🔎 User Features
+- Search users to start chat
+- Emoji support in messages
+- Responsive modern UI using Chakra UI
+
+---
+
+## 🧰 Tech Stack
+
+### Frontend
+- React.js
+- Chakra UI
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- Socket.IO
+
+### Database
+- MongoDB
+- Mongoose
+
+### Security & Auth
+- JWT (JSON Web Token)
+- bcrypt.js
+
+### Media Storage
+- Cloudinary
+
+---
+
+## 🏗️ Architecture
+
+Frontend (React)
+        ↓
+REST API + Socket.IO
+        ↓
+Backend (Node + Express)
+        ↓
+MongoDB Database
+
+---
+
+## 📂 Database Models
+
+### Users
+- name
+- email
+- password (hashed)
+- pic
+
+### Chats
+- chatName
+- isGroupChat
+- users
+- groupAdmin
+
+### Messages
+- sender
+- content
+- chat reference
+- timestamps
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone repo
 ```bash
-  git clone https://github.com/piyush-eon/mern-chat-app
-```
+git clone https://github.com/your-username/bartaconnect.git
+cd bartaconnect
+2. Install dependencies
+Backend
+cd backend
+npm install
+Frontend
+cd frontend
+npm install
+3. Environment variables
 
-Go to the project directory
+Create .env file in backend:
 
-```bash
-  cd mern-chat-app
-```
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+4. Run project
+Backend
+npm run server
+Frontend
+npm start
+📡 Socket.IO Events
+setup → user connection
+join chat → join chat room
+new message → send message
+typing → typing indicator
+stop typing → stop typing indicator
+📈 Future Improvements
+Online/Offline status
+Read receipts
+Voice & video calling (WebRTC)
+End-to-end encryption
+Message search
+File sharing improvements
+🚀 Deployment
+Frontend: Vercel / Netlify
+Backend: Render / Railway
+Database: MongoDB Atlas
+👨‍💻 Author
 
-Install dependencies
-
-```bash
-  npm install
-```
-
-```bash
-  cd frontend/
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-Start the Client
-
-```bash
-  //open now terminal
-  cd frontend
-  npm start
-```
-
-  
-# Features
-
-### Authenticaton
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/login.PNG)
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/signup.PNG)
-### Real Time Chatting with Typing indicators
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/real-time.PNG)
-### One to One chat
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/mainscreen.PNG)
-### Search Users
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/search.PNG)
-### Create Group Chats
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/new%20grp.PNG)
-### Notifications 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/group%20%2B%20notif.PNG)
-### Add or Remove users from group
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/add%20rem.PNG)
-### View Other user Profile
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/profile.PNG)
-## Made By
-
-- [@Piyush-eon](https://github.com/piyush-eon)
-
-  
+Md. Aktaruzzaman Aktar
+CSE Student | MERN Stack Developer
